@@ -1,6 +1,11 @@
 debian-backports Cookbook
 =========================
 
+This cookbook configure debian backports and:
+
+ * Can keep your kernel updated to the last backports release
+ * Can install packages from backports
+
 Attributes
 ----------
 
