@@ -1,6 +1,6 @@
 if node["platform"] == "debian"
   include_recipe 'debian-backports'
-  node['packages'].each do |pkg|
+  node['backports']['install'].each do |pkg|
     apt_package pkg do
       default_release "#{node['lsb']['codename']}-backports"
       action :install
